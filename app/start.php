@@ -9,7 +9,7 @@ include 'config.php';
 
 // Get container
 $app = new Slim\App();
-$container = $app->getContainer();
+$container = $app->getContainer($config);
 
 
 /**
