@@ -4,4 +4,4 @@
  */
 
 // INDEX route
-$app->get('/', 'IndexController:getIndex');
+$app->get('/', 'IndexController:getIndex')->setName('home');
