@@ -32,6 +32,14 @@ $container['view'] = function ($container) {
 };
 
 /**
+ * Controllers registration
+ */
+
+$container['IndexController'] = function ($container) {
+    return new \App\Controllers\IndexController($container);
+};
+
+/**
  * Load routers
  */
 require 'routers.php';
