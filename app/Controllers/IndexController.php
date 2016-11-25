@@ -8,8 +8,10 @@ class IndexController extends Controller{
 
     public function getIndex($request, $response){
         // Test response
-        $response->write("<h1>Hello ! It works !!!</h1>");
-        return $response;
+        return $this->view->render($response, 'templates/index.twig', [
+            'seoTitle' => 'Title',
+            'seoDescription' => 'Description'
+        ]);
 
     }
 
